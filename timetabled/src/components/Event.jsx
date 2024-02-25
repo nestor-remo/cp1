@@ -1,9 +1,12 @@
 import React from "react";
 
-const Event = () => {
+const Event = (props) => {
+
     return (
-        <div className="Event">
-            <h1>Event</h1>
-        </div>
-    );
+        <td className={'Event ' + props.color}>
+            <h5>{props.event}</h5>
+        </td>
+    )
 }
+
+export default Event;

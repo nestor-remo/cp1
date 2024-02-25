@@ -1,4 +1,5 @@
 import React from "react";
+import Event from './Event';
 
 const Calendar = () => {
     return (
@@ -20,12 +21,13 @@ const Calendar = () => {
                 <tbody> 
                     <tr>
                         <td className="time"> 8 am </td>
+                        <Event event = 'Fancy Dinner' color='green' />
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
+                        <Event event = 'Breakfast' color='pink' />
                         <td></td>
                         <td></td>
                     </tr>
@@ -120,7 +122,7 @@ const Calendar = () => {
                     <tr>
                         <td className="time"> 5 pm </td>
                         <td></td>
-                        <td></td>
+                        <Event event = 'League Sesh' color='blue' />
                         <td></td>
                         <td></td>
                         <td></td>
